@@ -1,0 +1,166 @@
+import React from 'react'
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import LinearGradient from 'react-native-linear-gradient'
+import { Home, Message, Navbar, Profile, ProfileandNotif } from '../../assets'
+import colors from '../../utils/colors/colors'
+export default function HalamanHome({navigation}) {
+  return (
+    <View style={{flex:1, backgroundColor:'white'}}>
+    <ScrollView>
+<LinearGradient style={{flex:1}} colors={['#3785A7','rgba(55,133,167,0.5)']}>
+
+    <View style={{padding:10, margin:20, alignItem:'center'}}>
+    <View style={{marginTop:0, paddingTop:0}}>
+<Image style={{width:312, height:36}} source={ProfileandNotif}/>
+
+    </View>
+    </View>
+
+     
+  <View style={{padding:10, backgroundColor:'white', height:'100%' , borderRadius:20, marginTop:-10}}>
+<Text style={{padding:10, fontFamily:'Poppins-SemiBold'}}>Pesanan</Text>
+
+<View style={{padding:0, }}>
+
+<View style={{padding:10,  }}>
+<Image style={{width:312, height:30}} source={Navbar} />
+</View>
+
+<View style={{flexDirection:'row', justifyContent:'space-around'}}>
+
+<View style={{padding:10}}>
+<View style={{padding:10, borderWidth:1, borderRadius:5, width:150, borderRadius:10, borderColor:colors.yellow}}>
+
+<Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'left'}}>Achmad</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>1200123-0001</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>gang. hablumin...</Text>
+
+<View style={{padding:10, borderWidth:1, borderColor:colors.yellow, borderRadius:10, marginTop:20}}>
+<Text style={{color:colors.yellow, textAlign:'center'}}>Pending</Text>
+</View>
+
+<TouchableOpacity onPress={() => navigation.navigate('HalamanProgres')} style={{padding:10, backgroundColor:colors.yellow, borderRadius:10, marginTop:20}}>
+<Text style={{color:'white', textAlign:'center', fontFamily:'Poppins-Regular', fontSize:12}}>Lihat</Text>
+</TouchableOpacity>
+</View>
+
+</View>
+
+<View style={{padding:10}}>
+
+<View style={{padding:10, borderWidth:1, borderRadius:5, width:150, borderRadius:10, borderColor:colors.yellow}}>
+
+<Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'left'}}>Michael</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>1200123-0002</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>gang. hablumin....</Text>
+
+<View style={{padding:10, borderWidth:1, borderColor:colors.yellow, borderRadius:10, marginTop:20}}>
+<Text style={{color:colors.yellow, textAlign:'center'}}>Hitung Berat</Text>
+</View>
+
+<TouchableOpacity style={{padding:10, backgroundColor:colors.primary, borderRadius:10, marginTop:20}}>
+<Text style={{color:'white', textAlign:'center', fontFamily:'Poppins-Regular', fontSize:12}}>Lihat</Text>
+</TouchableOpacity>
+</View>
+</View>
+
+</View>
+
+
+<View style={{flexDirection:'row', justifyContent:'space-around' }}>
+
+<View style={{padding:10}}>
+<View style={{padding:10, borderWidth:1, borderRadius:5, width:150, borderRadius:10, borderColor:colors.primary}}>
+
+<Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'left'}}>Azaz</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>1200123-00031</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>gang. hablumin...</Text>
+
+<View style={{padding:10, borderWidth:1, borderColor:colors.primary, borderRadius:10, marginTop:20, backgroundColor:colors.biru2}}>
+<Text style={{color:colors.primary, textAlign:'center'}}>Diterima</Text>
+</View>
+
+<TouchableOpacity style={{padding:10, backgroundColor:colors.primary, borderRadius:10, marginTop:20}}>
+<Text style={{color:'white', textAlign:'center', fontFamily:'Poppins-Regular', fontSize:12}}>Lihat</Text>
+</TouchableOpacity>
+</View>
+
+</View>
+
+<View style={{padding:10}}>
+
+<View style={{padding:10, borderWidth:1, borderRadius:5, width:150, borderRadius:10, borderColor:colors.primary}}>
+
+<Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'left'}}>Budi</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>1200123-0004</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>gang. hablumin...</Text>
+
+<View style={{padding:10, borderWidth:1, borderColor:colors.primary, borderRadius:10, marginTop:20, backgroundColor:colors.biru2}}>
+<Text style={{color:colors.primary, textAlign:'center'}}>Diterima</Text>
+</View>
+
+<TouchableOpacity style={{padding:10, backgroundColor:colors.primary, borderRadius:10, marginTop:20}}>
+<Text style={{color:'white', textAlign:'center', fontFamily:'Poppins-Regular', fontSize:12}}>Lihat</Text>
+</TouchableOpacity>
+</View>
+
+</View>
+</View>
+
+
+<View style={{flexDirection:'row', justifyContent:'space-between' }}>
+
+<View style={{padding:10}}>
+
+<View style={{padding:10, borderWidth:1, borderRadius:5, width:150, borderRadius:10,  borderColor:colors.primary}}>
+
+<Text style={{fontFamily:'Poppins-SemiBold', fontSize:12, textAlign:'left'}}>Udin</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>1200123-0005</Text>
+<Text style={{fontFamily:'Poppins-Regular', fontSize:12, textAlign:'left'}}>gang. hablumin...</Text>
+
+<View style={{padding:10, borderWidth:1, borderColor:colors.primary, borderRadius:10, marginTop:20, backgroundColor:colors.biru2}}>
+<Text style={{color:colors.primary, textAlign:'center'}}>Diterima</Text>
+</View>
+
+<TouchableOpacity style={{padding:10, backgroundColor:colors.primary, borderRadius:10, marginTop:20}}>
+<Text style={{color:'white', textAlign:'center', fontFamily:'Poppins-Regular', fontSize:12}}>Lihat</Text>
+</TouchableOpacity>
+</View>
+</View>
+
+
+
+
+
+</View>
+</View>
+
+
+
+  </View>
+
+
+</LinearGradient>
+ </ScrollView>
+
+  <View style={{flexDirection:'row', justifyContent:'space-evenly'}}>
+    <View style={{padding:10, alignItems:'center'}}>
+      <Image style={{width:24, height:24}} source={Message}/>
+      <Text style={{fontFamily:'Poppins-Regular', textAlign:'center', fontSize:10,}}>Message</Text>
+    </View>
+    <View  style={{padding:10, alignItems:'center'}}>
+       <Image style={{width:24, height:24}} source={Home}/>
+      <Text style={{fontFamily:'Poppins-Regular', textAlign:'center', fontSize:10,}}>Home</Text>
+    </View>
+    <View  style={{padding:10, alignItems:'center'}}>
+       <Image style={{width:24, height:24}} source={Profile}/>
+      <Text style={{fontFamily:'Poppins-Regular', textAlign:'center', fontSize:10,}}>Profile</Text>
+    </View>
+  </View>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+
+})
